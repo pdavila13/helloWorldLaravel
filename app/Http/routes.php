@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/helloWorld',"HelloWorld@hello");
+Route::get('/helloWorld',"HelloWorldController@hello");
