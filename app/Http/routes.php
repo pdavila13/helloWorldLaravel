@@ -17,11 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/helloWorld', function () {
-
-    $model = new HelloWorld();
-
-    $data["hello"] = $model -> getString();
-
-    return view('helloWorld', $data);
-});
+Route::get('/helloWorld',"HelloWorld@hello");
