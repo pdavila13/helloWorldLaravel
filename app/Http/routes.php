@@ -11,10 +11,17 @@
 |
 */
 
+use App\HelloWorld;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/helloWorld', function () {
-    return view('helloWorld');
+
+    $model = new HelloWorld();
+
+    $data["hello"] = $model -> getString();
+
+    return view('helloWorld', $data);
 });
