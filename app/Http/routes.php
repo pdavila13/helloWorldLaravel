@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/helloWorld',"HelloWorldController@hello");
+
+Route::resource('user','UserController');
