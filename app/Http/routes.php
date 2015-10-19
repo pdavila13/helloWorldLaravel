@@ -25,6 +25,22 @@ Route::get('/prova1', function () {
     return "<h1>Hello World.</h1>"   ;
 });
 
+Route::post('/prova1', function () {
+    return "<h1>Hello World.</h1>"   ;
+});
+
+Route::put('/prova1', function () {
+    return "<h1>Hello World.</h1>"   ;
+});
+
+Route::delete('/prova1', function () {
+    return "<h1>Hello World.</h1>"   ;
+});
+
+Route::any('/prova1', function () {
+    return "<h1>Hello World.</h1>"   ;
+});
+
 Route::get('/prova2', function () {
 
     $content = '<h1>Hello World.</h1>';
