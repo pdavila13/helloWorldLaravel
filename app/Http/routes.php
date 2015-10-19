@@ -74,3 +74,23 @@ Route::get('/prova5', function () {
     return response($content, $status)
         ->header('Content-Type', $contentType);
 });
+
+Route::get('/prova6', function () {
+
+    $content = '<h1>Hello World.</h1>';
+    $status = '200';
+    $contentType = 'text/plain';
+
+    return response($content, $status)
+        ->header('Content-Type', $contentType)
+        ->header('MyHeader', 'Hello');
+});
+
+Route::get('/prova7', function () {
+
+    $pathToFile = public_path('prova.pdf');
+
+    //echo $pathToFile;
+    return response()->download($pathToFile);
+
+});
