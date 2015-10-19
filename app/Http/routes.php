@@ -90,7 +90,24 @@ Route::get('/prova7', function () {
 
     $pathToFile = public_path('prova.pdf');
 
-    //echo $pathToFile;
+    //echo $pathToFile;                         //Depurar el codi per trobar errors
+    //dd $pathToFile;                           //Depurar el codi per trobar errors
+
     return response()->download($pathToFile);
 
+});
+
+Route::get('/prova8', function () {
+
+    return response()->json([
+        'name' => 'Panqueque','state' => 'CA'
+    ]);
+
+});
+
+Route::get('/prova9', function () {
+
+    return [
+        'name' => 'Panqueque','state' => 'CA'
+    ];
 });
