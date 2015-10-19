@@ -17,6 +17,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('persons','PersonsController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/helloWorld',"HelloWorldController@hello");
 
 Route::resource('user','UserController');
