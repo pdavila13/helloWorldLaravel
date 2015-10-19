@@ -110,4 +110,11 @@ Route::get('/prova9', function () {
     return [
         'name' => 'Panqueque','state' => 'CA'
     ];
+
+});
+
+Route::get('/prova10', function () {
+
+    return redirect('http://www.google.com');
+
 });
